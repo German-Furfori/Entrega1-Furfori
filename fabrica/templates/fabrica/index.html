@@ -21,30 +21,34 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                
+                <a class="navbar-brand" href={% url 'inicio' %}>Inicio</a>
+                <a class="navbar-brand" href={% url 'ingresar_trabajador' %}>Ingresar Trabajador</a>
+                <a class="navbar-brand" href="#">Ingresar Maquina</a>
+                <a class="navbar-brand" href="#">Ingresar Producto</a>
+                <a class="navbar-brand" href="#">Buscar Trabajador</a>
             </div>
         </nav>
 
         <!-- Masthead-->
 
-        {% block header_index %}
+        {% block header_block %}
             <header class="masthead">
                 <div class="container position-relative">
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
                             <div class="text-center text-white">
                                 <!-- Page heading-->
-                                <h1 class="mb-5">Bienvenidos!</h1>
+                                <h1 class="mb-5">Metalúrgica Furfori</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-        {% endblock header_index %}
+        {% endblock header_block %}
             
-        {% block plantilla %} 
+        {% block body_block %}
             
-        {% endblock plantilla %}
+        {% endblock body_block %}
 
         <!-- Footer-->
 
@@ -52,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Todos los derechos reservados.</p>
                     </div>
                 </div>
             </div>
