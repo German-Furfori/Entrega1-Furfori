@@ -9,7 +9,7 @@ class Trabajador(models.Model):
     email = models.EmailField(max_length=30)
     
     def __str__(self):
-        return f"{self.nombre} {self.apellido} {self.telefono} {self.email}"
+        return f"{self.nombre} {self.apellido}, TEL: {self.telefono}, email: {self.email}"
 
 
 class Maquina(models.Model):
@@ -25,4 +25,4 @@ class Producto(models.Model):
     cantidad_en_stock = models.IntegerField()
     
     def __str__(self):
-        return f"{self.producto} {self.cantidad_en_stock}"
+        return f"{self.producto}, stock: {self.cantidad_en_stock}"

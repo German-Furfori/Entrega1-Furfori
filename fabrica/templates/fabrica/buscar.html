@@ -1,0 +1,24 @@
+{% extends 'fabrica/index.html' %}
+
+{% block header_block %}
+{% endblock header_block %}
+
+{% block body_block %}
+
+    <form action="" method="get">
+            <table> 
+                {{buscador.as_table}}
+            </table>
+            
+            <input type="submit" placebolder="Enviar">
+    </form>
+
+    {% if dato is not None %}
+        {% for trabajador in trabajadores_buscados %}
+            <li>
+                {{trabajador}}
+            </li>
+        {% endfor %}
+    {% endif %}
+
+{% endblock body_block %}
