@@ -11300,7 +11300,7 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
-header.masthead { /* ------------------------------------ Acá está el masthead, donde está la imagen de fondo ------------------------------------ */
+header.masthead {
   position: relative;
   background-color: #343a40;
   background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
